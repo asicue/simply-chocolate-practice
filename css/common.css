@@ -74,9 +74,9 @@ img {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-
+  /* 
   outline: 2px solid red;
-  outline-offset: -2px;
+  outline-offset: -2px; */
 }
 
 .logo {
@@ -112,15 +112,29 @@ img {
 
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 10px;
+
+  transition: 300ms ease-out;
+  transition-property: border-color;
 }
 .socials-light .socials-link {
-  background-color: #fff;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.socials-light .socials-icon {
+  color: #fff;
 }
 .socials-link:hover,
 .socials-link:focus {
-  border: 1px solid rgba(253, 146, 34, 0.1);
+  border-color: rgba(253, 146, 34, 0.1);
 }
 .socials-icon {
+  color: #111111;
+
+  transition: 300ms ease-out;
+  transition-property: color;
+}
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  color: #fd9222;
 }
 
 /* Button */
@@ -131,6 +145,9 @@ img {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 100px;
+
+  transition: 300ms ease-out;
+  transition-property: color, background-color, border-color;
 }
 .btn-filled {
   color: #fff;
@@ -155,7 +172,7 @@ img {
 .secondary {
   display: block;
   margin: 0 auto;
-  
+
   border-color: #fd9222;
   color: #111;
 }
